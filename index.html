@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2 Yılımız</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Rubik', sans-serif;
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-color: #111;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 30px;
+      opacity: 0;
+      transform: translateY(60px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .content-box {
+      color: #fff;
+      max-width: 800px;
+      font-size: 30px;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 700;
+      line-height: 1.8;
+      padding: 20px;
+      text-align: center;
+      background: transparent;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      font-size: 36px; /* 36px olarak ayarlandı */
+      font-family: 'Rubik', sans-serif;
+      font-weight: 700;
+      line-height: 1.8;
+      white-space: pre-line;
+      animation: colorChange 5s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% { color: rgb(85, 6, 6); }
+      25% { color: orange; }
+      50% { color: rgb(204, 113, 8); }
+      75% { color: rgb(224, 153, 20); }
+      100% { color: rgb(202, 106, 16); }
+    }
+
+    /* Küçük ekranlar için yazı boyutunu 30px olarak belirledim */
+    @media (max-width: 600px) {
+      .content-box {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 30px !important; /* 30px'e çekildi */
+      }
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: 56px;
+      color: #fff;
+      animation: fadeInUp 2s ease forwards;
+      opacity: 0;
+    }
+
+    .scroll-down {
+      margin-top: 20px;
+      font-size: 30px;
+      animation: bounce 2s infinite;
+      color: #fff;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(60px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    .signature {
+      text-align: center;
+      font-size: 20px;
+      color: #aaa;
+      margin: 80px 0 40px;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1 class="hero-title">2 Yılımız</h1>
+    <div class="scroll-down">⬇</div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <h1>2 Nisan 2023'ten bugünü</h1>
+      <p>bugün iki yılımız oldu sevgilim
+      böyle söylerken kulağa kısa geliyor ama ne yaşadığımızı bilen biri için az değil
+      biz bu iki senede çok şey öğrendik
+      birbirimizi tanımayı
+      dinlemeyi
+      sabretmeyi
+      beraber gülmeyi
+      beraber susmayı
+      kızmayı, kıskanmayı
+      ama sonra sarılıp geçmeyi
+      ve en çok da birlikte iyileşmeyi</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>ilk başta aramızda bi mesafe vardı
+      senin içinde bi çekincen vardı
+      biraz soru işaretleri
+      bana yansıtmadığın ama hissettiğim şeyler
+      ben acele etmeden sadece olduğum gibi davranarak seni tanımaya çalıştım
+      biliyosun zaten
+      hiç rol yapmadım
+      her gün biraz daha inandım bize
+      sen de zamanla kendi içinden çıkıp bana yaklaştın
+      ve şimdi iki yıl sonra hâlâ birbirimize yazıyo olmamız bile başlı başına bi başarı bence</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>sen her zaman güçlü durmaya çalışan biriydin
+      ama ben bazen güçlü durduğun anlarda bile içten içe bi şeyleri taşıdığını hissettim
+      yüzüne yansıtmadığın şeyleri
+      düşüncelerini, korkularını, bazen cevabını bilmediğin şeyleri
+      ve ben her zaman yanında olmaya çalıştım
+      sen konuşmasan da
+      konuşamasan da
+      en azından yalnız olmadığını bil istedim
+      çünkü sen benim için sadece birlikte olduğum biri değilsin
+      sen bana kendimi değerli hissettiren, varlığıyla huzur veren bi insan oldun</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>zamanla öyle bi ilişkimiz oldu ki artık bazı şeyleri konuşmadan bile anlıyoruz
+      sticker atıyosun mesela
+      ne demek istediğini tam olarak anlamasam da hissediyorum
+      bi bakış açın var ya
+      hani böyle sadece bize özel
+      onla bile konuşmadan konuşuyoruz gibi
+      ve bu bence çok kıymetli bi şey</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>günlük hayatımızın bile bi dili var
+      her gece sırayla yazdığımız mesajlar
+      önce koynuş
+      sonra kalkarsan ara
+      sonra seni seviyorum
+      ardından uzun bi iyi geceler
+      sonra al stickerı
+      ben aldıııııııııııımmm yazıyorum
+      ama dikkat ettin mi bilmiyorum
+      bi gün m'si kısa gelirse anlıyorum bi şey olduğunu
+      bi şey var di mi diyosun
+      işte öyle bi bağ kurduk senle
+      cümle değil harf sayısıyla bile anlaşabiliyoruz</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>bi de bizim o meşhur lezzet turlarımız var
+      valla düşününce
+      istanbul’da gitmediğimiz çıtır tavukçu kalmadı
+      resmen insanlar için rehber gibi olduk
+      bizim için olay yemeğin kendisi değil
+      beraber gitmemiz, oturmamız, yorum yapmamız, bir şeyleri beraber keşfetmemizdi
+      ne yediğimizden çok kiminle yediğimizdi olay
+      ve o kişi hep sen oldun
+      hep de sen ol istedim</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>geçen sene de çok zor bi dönemdi aslında
+      hem sen ailevi olarak baya şey yaşadın
+      hem yks dönemimiz
+      tercih dönemi
+      bekleyişi, stresi
+      her şey üst üste geldi
+      bi de bunların üstüne ben vardım
+      biraz zor biri olduğumu da biliyorum
+      ama sen bana rağmen her şeyde yanımdaydın
+      bi kere bile "ben de yoruldum" demedin
+      sonra bi ara içimi tuhaf bi korku sardı
+      ya dedim üniversiteye geçince her şey değişirse
+      karakterimiz, ortamlarımız, hislerimiz
+      sana hissettirmedim belki ama o dönem her gece düşündüm bunu
+      gerçekten içimden çok yordu beni
+      ama zaman geçtikçe anladım ki
+      değişen hiçbir şey olmadı
+      ne sevgimiz
+      ne saygımız
+      ne bağlılığımız
+      sadece büyüdük
+      ama hala aynıyız</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>bazen bi yerden dönerken
+      gerçekten çok yorgun, çok düşkün hissettiğim anlar oldu
+      seni eve bırakıp sonra tekrar yola çıkmaya halim yoktu
+      ama bunu sana söyleyemedim
+      çünkü biliyosun seni bırakmadan gitmek içime sinmez
+      ama sen bir gün sanki içimi okur gibi
+      aşkım sen otobüsle devam et hiç inme dedin
+      inanamadım
+      bi insan bu kadar mı düşünceli olur dedim
+      saygılısın
+      özelsin.
+      böyle şeyleri hissetmen bile bana çok fazla geliyor bazen</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>sonra işe başlamadan önceki dönemlerde
+      gerçekten parasal olarak zorlandığım zamanlar oldu
+      bazen ne yapacağımı bilemedim
+      belki senin de haberin yoktu bazı şeylerden ama
+      sen hiçbir şey demeden
+      gizlice kartını uzattın
+      çekinmedin
+      bir şey beklemeden
+      ya bu çok büyük bi şey
+      ben bunu hiç unutmam
+      ileride belki yine zorluk yaşarız
+      ama sen yanımda oldukça ben her şeyin altından kalkarım gibi hissediyorum ya</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>bu iki yılda seninle her şeyi yaşadım gibi hissediyorum
+      hem çok güldüm
+      hem kırıldım
+      hem düşündüm
+      ama en çok sevindim
+      çünkü ne yaşarsam yaşayım sonunda seni düşündüğümde bi huzur geliyo içime
+      bazen "bu kız beni seviyo mu hâlâ" dediğim anlar oldu içimden
+      ama sonra küçücük bir hareketinle, küçücük bi mesajınla
+      tekrar inandım her şeye
+      çünkü biz her defasında birbirimize geri döndük
+      bu çok güven veren bi his</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>gelecek için büyük sözler veremem belki
+      ama her sabah yine seni severek, günaydın mesajını görerek uyanmak istiyorum
+      her gece seni seviyorum yazarak uyumak
+      aynı şeyleri tekrar tekrar yapmak ama sıkılmadan yapmak
+      her gün seni yeniden sevmek
+      ve her gün yine senle olmak istiyorum</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>bu iki yılda bana kattığın her şey için teşekkür ederim sevgilim.
+      sabır gösterdiğin her gün için
+      beni olduğum gibi kabul ettiğin için
+      bana destek olduğun anlar için
+      sadece yanımda olduğun için bile..</p>
+    </div>
+  </div>
+
+  <div class="section visible">
+    <div class="content-box">
+      <p>seninle olmak her gün yeniden doğmak gibi
+      daha nice yıllarımız olsun bitanem
+      aynı kalpten, aynı hislerle.
+      seninle, belki çocuklarımızla :) </p>
+    </div>
+  </div>
+
+  <div class="signature">Sonsuza kadar seninim</div>
+</body>
+</html>
